@@ -13,7 +13,7 @@
 <!-- ═══════════════════ TYPING SUBTITLE ═══════════════════ -->
 
 <a href="https://github.com/Legend2006H">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=FF8C2E&center=true&vCenter=true&multiline=false&width=680&height=45&lines=%F0%9F%9A%80+AI+Engineer+%C2%B7+LLM+Builder+%C2%B7+Hackathon+Warrior;%F0%9F%8F%B0+Neural+Fort+%E2%80%94+Where+Maratha+Grit+Meets+Neural+Nets;%F0%9F%94%A5+Currently+Building+Haq+%E2%80%94+AI+Wage-Theft+Detector;%E2%9A%A1+LangChain+%C2%B7+LLaMA+%C2%B7+Hugging+Face+%C2%B7+Rust" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=FF8C2E&center=true&vCenter=true&multiline=false&width=680&height=45&lines=%F0%9F%9A%80+AI+Engineer+%C2%B7+AI+Architect+%C2%B7+Hackathon+Warrior;%F0%9F%8F%B0+Neural+Fort+%E2%80%94+Where+Maratha+Grit+Meets+Neural+Nets;%E2%9A%A1+LangChain+%C2%B7+LLaMA+%C2%B7+Hugging+Face+%C2%B7+Rust" alt="Typing SVG" />
 </a>
 
 </div>
@@ -28,9 +28,8 @@
 ```
 
 🏰 **Hrushikesh Sarode** — B.Tech CSE (AI & ML), Chhatrapati Shivaji Maharaj University, Panvel · Class of 2028.
-I build **LLM-powered agents, RAG pipelines, and full-stack AI systems** — and I learn fastest under hackathon pressure.
+Specializing in **LLM-powered agents, RAG pipelines, and full-stack AI systems** — learning fastest under hackathon pressure.
 
-- 🔭 Currently building **[Haq](https://github.com/Legend2006H)** — an AI wage-theft detector for Indian workers *(Nebius × NVIDIA Hackathon)*
 - 🧠 Going deeper into **LLMs, agent frameworks & multi-modal AI**
 - 🏆 Goal: **AI Engineer** — shipping models that solve real-world problems
 
@@ -41,7 +40,7 @@ I build **LLM-powered agents, RAG pipelines, and full-stack AI systems** — and
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hrushikesh-sarode-5b21693b9)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hrushikesh-sarode-a00963240/)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sarodehrushikesh2006@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Legend2006H)
 
@@ -94,41 +93,6 @@ I build **LLM-powered agents, RAG pipelines, and full-stack AI systems** — and
 <!-- ═══════════════════ DIVIDER ═══════════════════ -->
 <img src="assets/divider.svg" width="100%" alt="" />
 
-## 🏗️ Featured Projects
-
-```text
-> neurofort --projects --featured
-```
-
-<table>
-<tr>
-<td width="50%">
-
-[![Mega Port Management AI Agent](https://github-readme-stats.vercel.app/api/pin/?username=Legend2006H&repo=Mega-Port-Command-final&theme=github_dark&bg_color=0d1117&border_color=1a1e2e&title_color=ff8c2e&text_color=c9d1d9&icon_color=5b8cff)](https://github.com/Legend2006H/Mega-Port-Command-final)
-
-</td>
-<td width="50%">
-
-[![QB Solver](https://github-readme-stats.vercel.app/api/pin/?username=Legend2006H&repo=Question-bank-pdf-solver-gives-answer-in-pdf&theme=github_dark&bg_color=0d1117&border_color=1a1e2e&title_color=ff8c2e&text_color=c9d1d9&icon_color=5b8cff)](https://github.com/Legend2006H/Question-bank-pdf-solver-gives-answer-in-pdf)
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-[![Customer Support OpenEnv](https://github-readme-stats.vercel.app/api/pin/?username=Legend2006H&repo=customer-support-agent-env&theme=github_dark&bg_color=0d1117&border_color=1a1e2e&title_color=ff8c2e&text_color=c9d1d9&icon_color=5b8cff)](https://github.com/Legend2006H/customer-support-agent-env)
-
-</td>
-<td width="50%">
-
-[![Stellar Payroll](https://github-readme-stats.vercel.app/api/pin/?username=Legend2006H&repo=stellar&theme=github_dark&bg_color=0d1117&border_color=1a1e2e&title_color=ff8c2e&text_color=c9d1d9&icon_color=5b8cff)](https://github.com/Legend2006H/stellar)
-
-</td>
-</tr>
-</table>
-
-<!-- ═══════════════════ DIVIDER ═══════════════════ -->
-<img src="assets/divider.svg" width="100%" alt="" />
 
 ## 📊 GitHub Stats
 
@@ -167,8 +131,6 @@ I build **LLM-powered agents, RAG pipelines, and full-stack AI systems** — and
 
 </div>
 
-> *Generated daily by [`.github/workflows/profile.yml`](.github/workflows/profile.yml) — zero external service dependency.*
-
 <!-- ═══════════════════ DIVIDER ═══════════════════ -->
 <img src="assets/divider.svg" width="100%" alt="" />
 
@@ -183,8 +145,6 @@ I build **LLM-powered agents, RAG pipelines, and full-stack AI systems** — and
 ![3D Contribution Graph](profile-3d-contrib/profile-night-rainbow.svg)
 
 </div>
-
-> *Rendered in-workflow via [yoshi389111/github-profile-3d-contrib](https://github.com/yoshi389111/github-profile-3d-contrib) — runs inside the repo, not an external service.*
 
 <!-- ═══════════════════ DIVIDER ═══════════════════ -->
 <img src="assets/divider.svg" width="100%" alt="" />
@@ -201,8 +161,6 @@ I build **LLM-powered agents, RAG pipelines, and full-stack AI systems** — and
 <img src="assets/contribution-wave-light.svg#gh-light-mode-only" alt="Contribution wave (light)" width="100%" />
 
 </div>
-
-> *Custom-built Python script reads the GitHub GraphQL API and renders a themed SVG. [View source →](scripts/contribution_wave.py)*
 
 <!-- ═══════════════════ DIVIDER ═══════════════════ -->
 <img src="assets/divider.svg" width="100%" alt="" />

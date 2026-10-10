@@ -134,7 +134,7 @@
     <circle cx="1100" cy="20" r="3" fill="#e06910"><animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/></circle>
     <text x="1110" y="24" fill="#e06910" opacity="0.8">SYS ONLINE</text>
     <circle cx="28" cy="352" r="3" fill="#3b5998"><animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/></circle>
-    <text x="38" y="356" fill="#3b5998" opacity="0.7">BUILDING HAQ</text>
+    <text x="38" y="356" fill="#3b5998" opacity="0.7">NEURAL CORE</text>
   </g>
 
   <!-- ==================== MAIN TITLE ==================== -->
@@ -159,7 +159,7 @@
   <!-- ==================== CYCLING TAGLINES ==================== -->
   <g font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="18" text-anchor="middle">
     <text x="600" y="235" fill="#57606a" opacity="0">
-      AI Engineer · Neural Fort Builder
+      AI Engineer · Neural Systems Architect
       <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.02;0.22;0.25;1" dur="16s" repeatCount="indefinite"/>
     </text>
     <text x="600" y="235" fill="#57606a" opacity="0">
@@ -167,7 +167,7 @@
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.25;0.27;0.47;0.5;1" dur="16s" repeatCount="indefinite"/>
     </text>
     <text x="600" y="235" fill="#57606a" opacity="0">
-      Currently Building Haq — AI Wage-Theft Detector
+      Specializing in LLM Agents &amp; RAG Systems
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5;0.52;0.72;0.75;1" dur="16s" repeatCount="indefinite"/>
     </text>
     <text x="600" y="235" fill="#57606a" opacity="0">
