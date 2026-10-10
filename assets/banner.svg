@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="Hrushikesh Sarode — AI Engineer in the making">
+  <title>Hrushikesh Sarode — animated profile banner</title>
+  <defs>
+    <radialGradient id="blobO" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ff6b1a" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ff6b1a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobB" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#2e4bff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#2e4bff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.45" r="0.75">
+      <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffd9ae"/>
+    </linearGradient>
+    <linearGradient id="edgeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff7a1a" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ff7a1a"/>
+      <stop offset="100%" stop-color="#ff7a1a" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff"/>
+    </pattern>
+    <pattern id="batt" width="48" height="70" patternUnits="userSpaceOnUse">
+      <path d="M0 70 L0 34 L15 34 L15 18 L33 18 L33 34 L48 34 L48 70 Z" fill="#070b13"/>
+    </pattern>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .sub { opacity: 0; animation: subCycle 12s ease-in-out infinite; }
+    .s1 { animation-delay: 0s; } .s2 { animation-delay: 4s; } .s3 { animation-delay: 8s; }
+    @keyframes subCycle {
+      0% { opacity: 0; transform: translateY(10px); }
+      6% { opacity: 1; transform: translateY(0); }
+      31% { opacity: 1; transform: translateY(0); }
+      37% { opacity: 0; transform: translateY(-6px); }
+      100% { opacity: 0; }
+    }
+    .p { animation: floatY 7s ease-in-out infinite; }
+    @keyframes floatY { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-24px); } }
+  </style>
+
+  <!-- base -->
+  <rect width="1200" height="400" fill="#0d1117"/>
+
+  <!-- drifting dot grid -->
+  <g opacity="0.05">
+    <g>
+      <rect width="1200" height="400" fill="url(#dots)"/>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="34 0" dur="10s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- ambient glow blobs -->
+  <ellipse cx="1020" cy="40" rx="330" ry="170" fill="url(#blobO)" opacity="0.5">
+    <animateTransform attributeName="transform" type="translate" values="0 0; -70 50; 0 0" dur="18s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="180" cy="380" rx="320" ry="170" fill="url(#blobB)" opacity="0.45">
+    <animateTransform attributeName="transform" type="translate" values="0 0; 70 -50; 0 0" dur="23s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- neural network : left cluster (saffron) -->
+  <g stroke-linecap="round">
+    <line x1="88" y1="84" x2="168" y2="128" stroke="#ff8c2e" stroke-width="1.6" opacity="0.4" stroke-dasharray="5 7"><animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.6s" repeatCount="indefinite"/></line>
+    <line x1="168" y1="128" x2="104" y2="196" stroke="#ff8c2e" stroke-width="1.6" opacity="0.4" stroke-dasharray="5 7"><animate attributeName="stroke-dashoffset" from="0" to="-24" dur="2.1s" repeatCount="indefinite"/></line>
+    <line x1="104" y1="196" x2="196" y2="238" stroke="#ff8c2e" stroke-width="1.6" opacity="0.4" stroke-dasharray="5 7"><animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.8s" repeatCount="indefinite"/></line>
+    <line x1="196" y1="238" x2="64" y2="292" stroke="#ff8c2e" stroke-width="1.6" opacity="0.4" stroke-dasharray="5 7"><animate attributeName="stroke-dashoffset" from="0" to="-24" dur="2.4s" repeatCount="indefinite"/></line>
+    <line x1="88" y1="84" x2="104" y2="196" stroke="#ff8c2e" stroke-width="1.2" opacity="0.25" stroke-dasharray="4 8"><animate attributeName="stroke-dashoffset" from="0" to="-24" dur="2.8s" repeatCount="indefinite"/></line>
+    <line x1="168" y1="128" x2="196" y2="238" stroke="#ff8c2e" stroke-width="1.2" opacity="0.25" stroke-dasharray="4 8"><animate attributeName="stroke-dashoffset" from="0" to="-24" dur="2s" repeatCount="indefinite"/></line>
+  </g>
+  <g>
+    <circle cx="88" cy="84" r="10" fill="#ff8c2e" opacity="0.22"><animate attributeName="opacity" values="0.22;0.07;0.22" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="88" cy="84" r="5" fill="#ff8c2e" filter="url(#softGlow)"/>
+    <circle cx="168" cy="128" r="10" fill="#ff8c2e" opacity="0.22"><animate attributeName="opacity" values="0.22;0.07;0.22" dur="3.6s" begin="0.8s" repeatCount="indefinite"/></circle>
+    <circle cx="168" cy="128" r="5" fill="#ff8c2e" filter="url(#softGlow)"/>
+    <circle cx="104" cy="196" r="10" fill="#ffb37a" opacity="0.22"><animate attributeName="opacity" values="0.22;0.07;0.22" dur="3.2s" begin="0.4s" repeatCount="indefinite"/></circle>
+    <circle cx="104" cy="196" r="5" fill="#ffb37a" filter="url(#softGlow)"/>
+    <circle cx="196" cy="238" r="10" fill="#ff8c2e" opacity="0.22"><animate attributeName="opacity" values="0.22;0.07;0.22" dur="3.9s" begin="1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="196" cy="238" r="5" fill="#ff8c2e" filter="url(#softGlow)"/>
+    <circle cx="64" cy="292" r="10" fill="#ffb37a" opacity="0.22"><animate attributeName="opacity" values="0.22;0.07;0.22" dur="3.4s" begin="0.2s" repeatCount="indefinite"/></circle>
+    <circle cx="64" cy="292" r="5" fill="#ffb37a" filter="url(#softGlow)"/>
+  </g>
+
+  <!-- neural network : right cluster (blue) -->
+  <g stroke-linecap="round">
+    <line x1="1112" y1="84" x2="1032" y2="128" stroke="#5b8cff" stroke-width="1.6" opacity="0.4" stroke-dasharray="5 7"><animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.9s" repeatCount="indefinite"/></line>
+    <line x1="1032" y1="128" x2="1096" y2="196" stroke="#5b8cff" stroke-width="1.6" opacity="0.4" stroke-dasharray="5 7"><animate attributeName="stroke-dashoffset" from="0" to="-24" dur="2.3s" repeatCount="indefinite"/></line>
+    <line x1="1096" y1="196" x2="1004" y2="238" stroke="#5b8cff" stroke-width="1.6" opacity="0.4" stroke-dasharray="5 7"><animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.7s" repeatCount="indefinite"/></line>
+    <line x1="1004" y1="238" x2="1136" y2="292" stroke="#5b8cff" stroke-width="1.6" opacity="0.4" stroke-dasharray="5 7"><animate attributeName="stroke-dashoffset" from="0" to="-24" dur="2.6s" repeatCount="indefinite"/></line>
+    <line x1="1112" y1="84" x2="1096" y2="196" stroke="#5b8cff" stroke-width="1.2" opacity="0.25" stroke-dasharray="4 8"><animate attributeName="stroke-dashoffset" from="0" to="-24" dur="2.2s" repeatCount="indefinite"/></line>
+    <line x1="1032" y1="128" x2="1004" y2="238" stroke="#5b8cff" stroke-width="1.2" opacity="0.25" stroke-dasharray="4 8"><animate attributeName="stroke-dashoffset" from="0" to="-24" dur="2.9s" repeatCount="indefinite"/></line>
+  </g>
+  <g>
+    <circle cx="1112" cy="84" r="10" fill="#5b8cff" opacity="0.22"><animate attributeName="opacity" values="0.22;0.07;0.22" dur="3.3s" begin="0.5s" repeatCount="indefinite"/></circle>
+    <circle cx="1112" cy="84" r="5" fill="#5b8cff" filter="url(#softGlow)"/>
+    <circle cx="1032" cy="128" r="10" fill="#5b8cff" opacity="0.22"><animate attributeName="opacity" values="0.22;0.07;0.22" dur="3.7s" begin="1s" repeatCount="indefinite"/></circle>
+    <circle cx="1032" cy="128" r="5" fill="#5b8cff" filter="url(#softGlow)"/>
+    <circle cx="1096" cy="196" r="10" fill="#8fb0ff" opacity="0.22"><animate attributeName="opacity" values="0.22;0.07;0.22" dur="3.1s" begin="0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="1096" cy="196" r="5" fill="#8fb0ff" filter="url(#softGlow)"/>
+    <circle cx="1004" cy="238" r="10" fill="#5b8cff" opacity="0.22"><animate attributeName="opacity" values="0.22;0.07;0.22" dur="3.8s" begin="1.4s" repeatCount="indefinite"/></circle>
+    <circle cx="1004" cy="238" r="5" fill="#5b8cff" filter="url(#softGlow)"/>
+    <circle cx="1136" cy="292" r="10" fill="#8fb0ff" opacity="0.22"><animate attributeName="opacity" values="0.22;0.07;0.22" dur="3.5s" begin="0.6s" repeatCount="indefinite"/></circle>
+    <circle cx="1136" cy="292" r="5" fill="#8fb0ff" filter="url(#softGlow)"/>
+  </g>
+
+  <!-- floating particles -->
+  <g opacity="0.55">
+    <circle class="p" cx="240" cy="90" r="2.5" fill="#ffb37a"/>
+    <circle class="p" cx="360" cy="300" r="2" fill="#7aa2ff" style="animation-delay:-2s"/>
+    <circle class="p" cx="520" cy="80" r="3" fill="#ff8c2e" style="animation-delay:-4s"/>
+    <circle class="p" cx="700" cy="320" r="2" fill="#ffffff" style="animation-delay:-1s"/>
+    <circle class="p" cx="860" cy="90" r="2.5" fill="#7aa2ff" style="animation-delay:-5s"/>
+    <circle class="p" cx="960" cy="280" r="2" fill="#ffb37a" style="animation-delay:-3s"/>
+    <circle class="p" cx="150" cy="250" r="2" fill="#ffffff" style="animation-delay:-6s"/>
+    <circle class="p" cx="1050" cy="180" r="2.5" fill="#ff8c2e" style="animation-delay:-2.5s"/>
+    <circle class="p" cx="600" cy="60" r="2" fill="#7aa2ff" style="animation-delay:-4.5s"/>
+    <circle class="p" cx="780" cy="140" r="2" fill="#ffb37a" style="animation-delay:-1.5s"/>
+  </g>
+
+  <!-- fort battlement silhouette -->
+  <rect x="0" y="330" width="1200" height="70" fill="url(#batt)"/>
+  <rect x="0" y="328.5" width="1200" height="2.5" fill="url(#edgeGrad)" opacity="0.85" filter="url(#softGlow)"/>
+
+  <!-- top hairline -->
+  <rect x="0" y="0" width="1200" height="3" fill="url(#edgeGrad)" opacity="0.8"/>
+
+  <!-- headline -->
+  <text x="600" y="118" text-anchor="middle" font-family="Inter, 'Segoe UI', Verdana, sans-serif" font-size="17" letter-spacing="9" fill="#ff9440" opacity="0.95">AI ENGINEER IN THE MAKING</text>
+  <text x="600" y="184" text-anchor="middle" font-family="Inter, 'Segoe UI', Verdana, sans-serif" font-size="68" font-weight="800" letter-spacing="2" fill="url(#titleGrad)">Hrushikesh Sarode</text>
+  <rect x="540" y="202" width="120" height="3" rx="1.5" fill="url(#edgeGrad)"/>
+
+  <!-- cycling subtitles -->
+  <text class="sub s1" x="600" y="256" text-anchor="middle" font-family="Inter, 'Segoe UI', Verdana, sans-serif" font-size="26" fill="#cdd6e4">LLM Apps &#183; RAG Systems &#183; AI Agents</text>
+  <text class="sub s2" x="600" y="256" text-anchor="middle" font-family="Inter, 'Segoe UI', Verdana, sans-serif" font-size="26" fill="#cdd6e4">Hackathon Builder &#8212; Meta &#215; Hugging Face</text>
+  <text class="sub s3" x="600" y="256" text-anchor="middle" font-family="Inter, 'Segoe UI', Verdana, sans-serif" font-size="26" fill="#cdd6e4">B.Tech CSE (AI &amp; ML) &#183; Class of 2028</text>
+
+  <text x="600" y="308" text-anchor="middle" font-family="Inter, 'Segoe UI', Verdana, sans-serif" font-size="14" letter-spacing="5" fill="#7d8798">PANVEL &#183; NAVI MUMBAI &#183; INDIA</text>
+
+  <rect width="1200" height="400" fill="url(#vig)"/>
+</svg>
