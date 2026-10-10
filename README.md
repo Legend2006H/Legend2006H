@@ -6,15 +6,14 @@
 
 🚀 B.Tech CSE (AI & ML) undergrad at CSMU, Panvel — working toward becoming an **AI Engineer**. I build **LLM apps, RAG systems and AI agents**, and I learn fastest under hackathon pressure (Meta × Hugging Face hackathons).
 
-- 🔭 Currently building **Haq** — an AI wage-theft detector for Indian workers *(Nebius × NVIDIA Hackathon)*
 - 🌱 Going deeper into **LLMs, RAG pipelines & agent frameworks**
 - 💬 Ask me about **GenAI, RAG, AI agents, full-stack web dev**
 - 📫 How to reach me: **sarodehrushikesh2006@gmail.com**
-- ⚡ Fun fact: Maratha grit, neural networks.
 
 # 🌐 Socials
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hrushikesh-sarode-5b21693b9)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hrushikesh-sarode-a00963240/)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sarodehrushikesh2006@gmail.com)
 
 # 💻 Tech Stack
