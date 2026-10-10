@@ -104,12 +104,12 @@ Specializing in **LLM-powered agents, RAG pipelines, and full-stack AI systems**
 <tr>
 <td width="50%">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Legend2006H&show_icons=true&theme=github_dark&bg_color=0d1117&border_color=1a1e2e&title_color=ff8c2e&text_color=c9d1d9&icon_color=5b8cff&include_all_commits=true&count_private=true" alt="GitHub Stats" width="100%" />
+<img src="https://github-readme-stats.vercel.app/api?username=Legend2006H&show_icons=true&theme=github_dark&bg_color=0d1117&border_color=1a1e2e&title_color=ff8c2e&text_color=c9d1d9&icon_color=5b8cff&include_all_commits=true&hide_rank=true&hide=issues" alt="GitHub Stats" width="100%" />
 
 </td>
 <td width="50%">
 
-<img src="https://streak-stats.demolab.com?user=Legend2006H&theme=github-dark-blue&background=0d1117&border=1a1e2e&ring=ff8c2e&fire=ff8c2e&currStreakLabel=ff8c2e&sideLabels=c9d1d9&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=5b8cff" alt="GitHub Streak" width="100%" />
+<img src="https://streak-stats.demolab.com?user=Legend2006H&theme=github-dark-blue&background=0d1117&border=1a1e2e&ring=ff8c2e&fire=ff8c2e&currStreakLabel=ff8c2e&sideLabels=c9d1d9&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=5b8cff&hide_total_contributions=true" alt="GitHub Streak" width="100%" />
 
 </td>
 </tr>
