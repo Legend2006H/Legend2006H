@@ -45,17 +45,6 @@
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
-# 🚀 Featured Projects
-
-- 🤖 **Mega Port Management AI Agent** — autonomous port-logistics agent (LLaMA + LangChain) · *Meta × Hugging Face Hackathon 2026*
-- 🧾 **QB Solver** — question-bank PDFs → AI-generated answers, exported as PDF
-- 🎧 **Customer Support OpenEnv** — Docker environment to evaluate AI support agents (ticket triage, KB search, escalation)
-- 💸 **Stellar Payroll** — cross-currency payroll smart contract for freelancers *(Soroban / Rust)*
-
-| [![Mega Port Management AI Agent](https://github-readme-stats.vercel.app/api/pin/?username=Legend2006H&repo=Mega-Port-Command-final&theme=github_dark)](https://github.com/Legend2006H/Mega-Port-Command-final) | [![QB Solver](https://github-readme-stats.vercel.app/api/pin/?username=Legend2006H&repo=Question-bank-pdf-solver-gives-answer-in-pdf&theme=github_dark)](https://github.com/Legend2006H/Question-bank-pdf-solver-gives-answer-in-pdf) |
-|---|---|
-| [![Customer Support OpenEnv](https://github-readme-stats.vercel.app/api/pin/?username=Legend2006H&repo=customer-support-agent-env&theme=github_dark)](https://github.com/Legend2006H/customer-support-agent-env) | [![Stellar Payroll](https://github-readme-stats.vercel.app/api/pin/?username=Legend2006H&repo=stellar&theme=github_dark)](https://github.com/Legend2006H/stellar) |
-
 # 📊 GitHub Stats
 
 <table>
