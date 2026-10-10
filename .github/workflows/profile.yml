@@ -36,15 +36,16 @@ jobs:
             assets/snake-dark.svg?palette=github-dark&color_snake=#ff8c2e&color_dots=#0d1117,#161b22,#1a1e2e,#5b8cff,#ff8c2e
             assets/snake-light.svg?palette=github&color_snake=#e06910&color_dots=#ebedf0,#d0d7de,#9be9a8,#3b5998,#e06910
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.PAT || secrets.PERSONAL_ACCESS_TOKEN || secrets.GITHUB_TOKEN }}
 
       # ── 3. 3D Contribution Graph ─────────────────────────────────────
       - name: Generate 3D contribution graph
         uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.PAT || secrets.PERSONAL_ACCESS_TOKEN || secrets.GITHUB_TOKEN }}
           USERNAME: Legend2006H
 
+      # ── 4. Move 3D graph to assets ───────────────────────────────────
       - name: Move 3D graph to assets
         run: |
           mkdir -p assets
@@ -56,7 +57,7 @@ jobs:
             [ -n "$FIRST" ] && cp "$FIRST" assets/3d-contrib-dark.svg
           fi
 
-      # ── 4. Contribution Activity Wave (custom Python) ────────────────
+      # ── 5. Contribution Activity Wave (custom Python) ────────────────
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -65,7 +66,7 @@ jobs:
       - name: Generate contribution wave SVGs
         run: python scripts/contribution_wave.py --login Legend2006H
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.PAT || secrets.PERSONAL_ACCESS_TOKEN || secrets.GITHUB_TOKEN }}
 
       # ── 5. Commit & Push ─────────────────────────────────────────────
       - name: Commit generated assets
