@@ -1,0 +1,75 @@
+name: "Neural Fort — Generate Profile Assets"
+
+# Generates: contribution snake, 3D contribution graph, activity wave
+# All assets are committed back to the repo automatically.
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Daily at midnight UTC
+  workflow_dispatch: # Manual trigger from Actions tab
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "assets/**"
+      - "profile-3d-contrib/**"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      # ── 1. Checkout ──────────────────────────────────────────────────
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # ── 2. Contribution Snake (Platane/snk) ──────────────────────────
+      - name: Generate contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: Legend2006H
+          outputs: |
+            assets/snake-dark.svg?palette=github-dark&color_snake=#ff8c2e&color_dots=#0d1117,#161b22,#1a1e2e,#5b8cff,#ff8c2e
+            assets/snake-light.svg?palette=github&color_snake=#e06910&color_dots=#ebedf0,#d0d7de,#9be9a8,#3b5998,#e06910
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── 3. 3D Contribution Graph ─────────────────────────────────────
+      - name: Generate 3D contribution graph
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: Legend2006H
+
+      - name: Move 3D graph to assets
+        run: |
+          mkdir -p assets
+          cp -f profile-3d-contrib/profile-night-rainbow.svg assets/3d-contrib-dark.svg 2>/dev/null || true
+          cp -f profile-3d-contrib/profile-green-animate.svg assets/3d-contrib-light.svg 2>/dev/null || true
+          # Fallback: use any available output
+          if [ ! -f assets/3d-contrib-dark.svg ]; then
+            FIRST=$(ls profile-3d-contrib/*.svg 2>/dev/null | head -1)
+            [ -n "$FIRST" ] && cp "$FIRST" assets/3d-contrib-dark.svg
+          fi
+
+      # ── 4. Contribution Activity Wave (custom Python) ────────────────
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate contribution wave SVGs
+        run: python scripts/contribution_wave.py --login Legend2006H
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── 5. Commit & Push ─────────────────────────────────────────────
+      - name: Commit generated assets
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: regenerate Neural Fort profile assets"
+          file_pattern: "assets/*.svg profile-3d-contrib/*.svg"

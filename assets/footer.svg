@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120">
+  <defs>
+    <linearGradient id="footGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="waveGrad1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff8c2e"/>
+      <stop offset="50%" stop-color="#5b8cff"/>
+      <stop offset="100%" stop-color="#ff8c2e"/>
+    </linearGradient>
+    <linearGradient id="waveGrad2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5b8cff"/>
+      <stop offset="50%" stop-color="#ffb37a"/>
+      <stop offset="100%" stop-color="#5b8cff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="120" fill="#0d1117"/>
+  <!-- Wave 1 -->
+  <path d="M0 80 Q150 40 300 70 T600 50 T900 70 T1200 55 L1200 120 L0 120 Z" fill="url(#waveGrad1)" opacity="0.08">
+    <animate attributeName="d" values="M0 80 Q150 40 300 70 T600 50 T900 70 T1200 55 L1200 120 L0 120 Z;M0 60 Q150 80 300 50 T600 75 T900 45 T1200 65 L1200 120 L0 120 Z;M0 80 Q150 40 300 70 T600 50 T900 70 T1200 55 L1200 120 L0 120 Z" dur="6s" repeatCount="indefinite"/>
+  </path>
+  <!-- Wave 2 -->
+  <path d="M0 90 Q200 60 400 85 T800 65 T1200 80 L1200 120 L0 120 Z" fill="url(#waveGrad2)" opacity="0.1">
+    <animate attributeName="d" values="M0 90 Q200 60 400 85 T800 65 T1200 80 L1200 120 L0 120 Z;M0 70 Q200 95 400 65 T800 90 T1200 70 L1200 120 L0 120 Z;M0 90 Q200 60 400 85 T800 65 T1200 80 L1200 120 L0 120 Z" dur="8s" repeatCount="indefinite"/>
+  </path>
+  <!-- Wave 3 (saffron glow) -->
+  <path d="M0 100 Q300 80 600 95 T1200 90 L1200 120 L0 120 Z" fill="#ff8c2e" opacity="0.12">
+    <animate attributeName="d" values="M0 100 Q300 80 600 95 T1200 90 L1200 120 L0 120 Z;M0 85 Q300 105 600 80 T1200 95 L1200 120 L0 120 Z;M0 100 Q300 80 600 95 T1200 90 L1200 120 L0 120 Z" dur="5s" repeatCount="indefinite"/>
+  </path>
+  <!-- Battlement micro-pattern at very bottom -->
+  <g opacity="0.25">
+    <path d="M0 120 V 114 H8 V 117 H14 V 114 H22 V 117 H28 V 114 H36 V 117 H42 V 114 H50 V 117 H56 V 114 H64 V 117 H70 V 114 H78 V 117 H84 V 114 H92 V 117 H98 V 114 H106 V 117 H112 V 114 H120 V 117 H126 V 114 H134 V 117 H140 V 114 H148 V 117 H154 V 114 H162 V 117 H168 V 114 H176 V 117 H182 V 114 H190 V 117 H196 V 114 H204 V 117 H210 V 114 H218 V 117 H224 V 114 H232 V 117 H238 V 114 H246 V 117 H252 V 114 H260 V 117 H266 V 114 H274 V 117 H280 V 114 H288 V 117 H294 V 114 H302 V 117 H308 V 114 H316 V 117 H322 V 114 H330 V 117 H336 V 114 H344 V 117 H350 V 114 H358 V 117 H364 V 114 H372 V 117 H378 V 114 H386 V 117 H392 V 114 H400 V 117 H406 V 114 H414 V 117 H420 V 114 H428 V 117 H434 V 114 H442 V 117 H448 V 114 H456 V 117 H462 V 114 H470 V 117 H476 V 114 H484 V 117 H490 V 114 H498 V 117 H504 V 114 H512 V 117 H518 V 114 H526 V 117 H532 V 114 H540 V 117 H546 V 114 H554 V 117 H560 V 114 H568 V 117 H574 V 114 H582 V 117 H588 V 114 H596 V 117 H602 V 114 H610 V 117 H616 V 114 H624 V 117 H630 V 114 H638 V 117 H644 V 114 H652 V 117 H658 V 114 H666 V 117 H672 V 114 H680 V 117 H686 V 114 H694 V 117 H700 V 114 H708 V 117 H714 V 114 H722 V 117 H728 V 114 H736 V 117 H742 V 114 H750 V 117 H756 V 114 H764 V 117 H770 V 114 H778 V 117 H784 V 114 H792 V 117 H798 V 114 H806 V 117 H812 V 114 H820 V 117 H826 V 114 H834 V 117 H840 V 114 H848 V 117 H854 V 114 H862 V 117 H868 V 114 H876 V 117 H882 V 114 H890 V 117 H896 V 114 H904 V 117 H910 V 114 H918 V 117 H924 V 114 H932 V 117 H938 V 114 H946 V 117 H952 V 114 H960 V 117 H966 V 114 H974 V 117 H980 V 114 H988 V 117 H994 V 114 H1002 V 117 H1008 V 114 H1016 V 117 H1022 V 114 H1030 V 117 H1036 V 114 H1044 V 117 H1050 V 114 H1058 V 117 H1064 V 114 H1072 V 117 H1078 V 114 H1086 V 117 H1092 V 114 H1100 V 117 H1106 V 114 H1114 V 117 H1120 V 114 H1128 V 117 H1134 V 114 H1142 V 117 H1148 V 114 H1156 V 117 H1162 V 114 H1170 V 117 H1176 V 114 H1184 V 117 H1190 V 114 H1200 V 120 Z" fill="#ff8c2e"/>
+  </g>
+  <!-- Center text -->
+  <text x="600" y="60" text-anchor="middle" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="11" fill="#7d8590" letter-spacing="3">
+    NEURAL FORT · LEGEND2006H · 2026
+  </text>
+</svg>
